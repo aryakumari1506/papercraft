@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
     <style>
-        body{
+        body {
             background-image: url("background.png");
             background-size: cover;
             background-position: top;
@@ -13,61 +13,91 @@
             text-align: center;
         }
 
-        #item{
+        #item {
             font-size: 19px;
             color: rgb(247, 113, 135);
             text-decoration: underline rgb(135, 210, 23) wavy;
         }
 
         table {
-        border: 1px solid black;
-        background-color: rgb(249, 245, 226);
+            border: 1px solid black;
+            background-color: rgb(249, 245, 226);
+            margin-bottom: 20px; 
+            display: inline-block; 
         }
 
         th, td {
-        border: 1px solid cornflowerblue;
-        text-align: center;
+            border: 1px solid cornflowerblue;
+            text-align: center;
+            padding: 5px;
         }
 
-        div{
-        margin: 0 auto;
-        width: 15%;   
+        h3 {
+            color: cornflowerblue;
+            font-size: 30px;
+            text-decoration: underline;
+            margin-top: 0;
+        }
+
+        .container {
+            width: 45%; 
+            margin: 0 auto; 
+        }
+
+        .table-container {
+            display: inline-block;
+            width: 45%; 
+            vertical-align: top; 
+        }
+        .table-container2 {
+            display: inline-block;
+            width: 45%; 
+            vertical-align: top; 
         }
     </style>
 </head>
 <body>
-    <div>
-        <p id="item"><strong>Pens and sketches</strong></p>
-        <table>
-            <tr>
-                <th>Pens/Sketches</th>
-                <th>Cost</th>
-            </tr>
-            <tr>
-                <td>Pens</td>
-                <td>Rs. 10</td>
-            </tr>
-            <tr>
-                <td>Sketches</td>
-                <td>Rs.20</td>
-            </tr>
-        </table>
-        <p id="item"><strong>Notebooks and planners</strong></p>
-        <table>
-            <tr>
-                <th>Notebooks/Planners</th>
-                <th>Cost</th>
-            </tr>
-            <tr>
-                <td>Notebooks</td>
-                <td>Rs. 50</td>
-            </tr>
-            <tr>
-                <td>Planners</td>
-                <td>Rs.100</td>
-            </tr>
-        </table>
-        <p id="item"><strong>Art</strong></p>
+    <h3>Our Products</h3>
+    <div class="container">
+        <div class="table-container">
+            <img src="pencils.png" height="143px">
+            <p id="item"><strong>Pens and sketches</strong></p>
+            <table>
+                <tr>
+                    <th>Pens/Sketches</th>
+                    <th>Cost</th>
+                </tr>
+                <tr>
+                    <td>Pens</td>
+                    <td>Rs. 10</td>
+                </tr>
+                <tr>
+                    <td>Sketches</td>
+                    <td>Rs.20</td>
+                </tr>
+            </table>
+        </div>
+        <div class="table-container">
+            <img src="planner.jpg" height="143px">
+            <p id="item"><strong>Notebooks and planners</strong></p>
+            <table>
+                <tr>
+                    <th>Notebooks/Planners</th>
+                    <th>Cost</th>
+                </tr>
+                <tr>
+                    <td>Notebooks</td>
+                    <td>Rs. 50</td>
+                </tr>
+                <tr>
+                    <td>Planners</td>
+                    <td>Rs.100</td>
+                </tr>
+            </table>
+        </div>
+        <div class="table-container2">
+            <img src="paint.png" height="143px">
+            <p id="item"><strong>Art</strong></p>
         <table>
             <tr>
                 <th>Art items</th>
@@ -86,25 +116,31 @@
                 <td>Rs. 500</td>
             </tr>
         </table>
-        <p id="item"><strong>Gifting items</strong></p>
-        <table>
-            <tr>
-                <th>Gifting items</th>
-                <th>Cost</th>
-            </tr>
-            <tr>
-                <td>Wrapping papers</td>
-                <td>Rs. 10</td>
-            </tr>
-            <tr>
-                <td>Pen stands</td>
-                <td>Rs.200</td>
-            </tr>
-            <tr>
-                <td>Diaries</td>
-                <td>Rs.150</td>
-            </tr>
-        </table>
+            </table>
+        </div>
+        <div class="table-container2">
+            <img src="gift.png" height="143px">
+            <p id="item"><strong>Gifting items</strong></p>
+            <table>
+                <tr>
+                    <th>Gifting items</th>
+                    <th>Cost</th>
+                </tr>
+                <tr>
+                    <td>Wrapping papers</td>
+                    <td>Rs. 10</td>
+                </tr>
+                <tr>
+                    <td>Pen stands</td>
+                    <td>Rs.200</td>
+                </tr>
+                <tr>
+                    <td>Diaries</td>
+                    <td>Rs.150</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>
+
